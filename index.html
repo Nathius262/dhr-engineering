@@ -11,9 +11,9 @@
 
 <body>
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand animate-element d-md-flex justify-content-md-start justify-content-center" href="#">
+            <a class="navbar-brand d-md-flex justify-content-md-start justify-content-center" href="#">
                 <img class="container img-fluid" src="static/img/DHR-Logo-Top-portion-e1697132889405.webp" alt="Logo" width="40">
                 <div class="flex-wrap text-md-start text-center">DHR Engineering</div>
             </a>
@@ -32,66 +32,97 @@
     </nav>
 
     <!-- Hero Section -->
-    <header id="home" class="hero">
-        <img src="static/img/DHR-Logo-Top-portion-e1697132889405.webp" alt="DHR Engineering Logo" class="animate-element">
-        <h1>Expert Civil Engineering & Sustainable Land Development</h1>
-        <p class="lead">Empowering Your Vision: Delivering Cutting-Edge Engineering Excellence for Tomorrow’s Infrastructure</p>
+    <header id="home" class="hero position-relative" style="background-image: url('static/img/hero-bg.jpg'); background-size: cover; background-position: center; min-height: 80vh; padding: 150px 0;">
+        <div class="overlay position-absolute w-100 h-100" style="background: rgba(0, 0, 0, 0.6); top: 0; left: 0;"></div>
+        <div class="container text-center text-white position-relative">
+            <img src="static/img/DHR-Logo-Top-portion-e1697132889405.webp" alt="DHR Engineering Logo" class="hero-logo">
+            <h1 class="mt-4 fw-bold">Expert Civil Engineering & Sustainable Land Development</h1>
+            <p class="lead">Empowering Your Vision: Delivering Cutting-Edge Engineering Excellence for Tomorrow’s Infrastructure</p>
+        </div>
     </header>
+    
 
-    <!-- About Section -->
-    <section id="about" class="animate-element">
-        <div class="container">
-            <h2>About Us</h2>
-            <p>Serving the Dallas/Ft Worth Area with Civil Engineering and Land Development Solutions since 2003.</p>
-            <p>
-                Our staff comprises registered professional engineers specializing in residential, commercial, and industrial site
-                development. With expertise in paving, drainage, water, and sewer design, our design team has extensive experience
-                in flood control hydrology and hydraulics.
-            </p>
+    <section id="about" class="py-5 position-relative d-flex align-items-center" style="background-image: url('static/img/about-bg.jpg'); background-size: cover; background-position: center; min-height: 80vh; padding: 0; color: #ffffff;">
+        <div class="overlay position-absolute w-100 h-100" style="background: rgba(0, 0, 0, 0.6); top: 0; left: 0;"></div>
+        <div class="container-fluid d-flex align-items-center justify-content-center h-100 position-relative">
+            <div class="text-center px-3">
+                <h2>About Us</h2>
+                <p>Serving the Dallas/Ft Worth Area with Civil Engineering and Land Development Solutions since 2003.</p>
+                <p>
+                    Our staff comprises registered professional engineers specializing in residential, commercial, and industrial site
+                    development. With expertise in paving, drainage, water, and sewer design, our design team has extensive experience
+                    in flood control hydrology and hydraulics.
+                </p>
+            </div>
         </div>
     </section>
+    
+    
 
-    <!-- Services Section -->
-    <section id="services">
-        <div class="container">
-            <h2>Our Services</h2>
-            <div class="row justify-content-center align-items-center">
-                <div class="col-md-5 service-box animate-element">
+<!-- Services Section -->
+<section id="services" class="py-5">
+    <div class="container">
+        <h2 class="text-center">Our Services</h2>
+        <div class="row justify-content-center align-items-stretch">
+            <div class="col-md-5 d-flex">
+                <div class="service-box flex-fill">
+                    <img src="static/img/flood-control.jpg" alt="Flood Control" class="img-fluid rounded mb-3">
                     <h4>Flood Control and Stormwater Management</h4>
                     <p>We design innovative detention ponds, channels, and storm sewer systems for effective flood management.</p>
                 </div>
-                <div class="col-md-5 service-box animate-element">
+            </div>
+            <div class="col-md-5 d-flex">
+                <div class="service-box flex-fill">
+                    <img src="static/img/transportation.jpg" alt="Transportation Engineering" class="img-fluid rounded mb-3">
                     <h4>Transportation Engineering</h4>
                     <p>Specializing in roadway reconstruction, widening, traffic control, trails, and traffic impact analyses.</p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
 
     <!-- Contact Section -->
-    <section id="contact">
-        <div class="container text-center">
+    <section id="contact" class="py-5 position-relative" style="background-image: url('static/img/contact-bg.jpg'); background-size: cover; background-position: center;">
+        <div class="overlay position-absolute w-100 h-100" style="background: rgba(0, 0, 0, 0.6); top: 0; left: 0;"></div>
+        <div class="container text-center text-white position-relative">
             <h2>Contact Us</h2>
             <p><strong>DHR ENGINEERING, INC</strong></p>
             <p>511 E John Carpenter Fwy., Suite 500, Irving, TX 75062</p>
             <p><strong>Phone:</strong> (972) 717-0100 | <strong>Text:</strong> (214) 275-5500</p>
-            <p><strong>Email:</strong> <a href="mailto:contact@dhr-eng.com">contact@dhr-eng.com</a></p>
-            <div class="social-icons">
-                <a href="#" class="me-2">Twitter</a>
-                <a href="#" class="me-2">LinkedIn</a>
-            </div>
+            <p><strong>Email:</strong> <a href="mailto:contact@dhr-eng.com" class="text-white">contact@dhr-eng.com</a></p>
+            <form class="mt-4">
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <input type="text" class="form-control" placeholder="Your Name" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <input type="email" class="form-control" placeholder="Your Email" required>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Phone Number" required>
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
-        <p>&copy; 2024 DHR Engineering, Inc. All Rights Reserved.</p>
-        <nav>
-            <a href="#home">Home</a> | 
-            <a href="#services">Services</a> | 
-            <a href="#about">About</a> | 
-            <a href="#contact">Contact</a>
-        </nav>
+    <footer class="footer bg-dark text-white py-3">
+        <div class="container text-center">
+            <p>&copy; 2024 DHR Engineering, Inc. All Rights Reserved.</p>
+            <nav>
+                <a href="#home" class="text-white">Home</a> | 
+                <a href="#services" class="text-white">Services</a> | 
+                <a href="#about" class="text-white">About</a> | 
+                <a href="#contact" class="text-white">Contact</a>
+            </nav>
+        </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
